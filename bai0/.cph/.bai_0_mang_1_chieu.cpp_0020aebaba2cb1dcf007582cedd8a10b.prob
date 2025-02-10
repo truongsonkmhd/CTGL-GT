@@ -1,0 +1,1 @@
+{"name":"Local: bai_0_mang_1_chieu","url":"d:\\ctgl&gt\\lession_one\\bai0\\bai_0_mang_1_chieu.cpp","tests":[{"id":1708878529369,"input":"2\n10\n-1 -1 6 1 9 3 2 -1 4 -1\n6\n0 -3 1 -2 4 -9","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\ctgl&gt\\lession_one\\bai0\\bai_0_mang_1_chieu.cpp","group":"local","local":true}
