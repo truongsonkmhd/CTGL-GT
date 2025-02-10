@@ -1,5 +1,3 @@
-package codePtit_java_core;
-
 import java.util.Scanner;
 
 public class so_chia_het_lon_nhat {

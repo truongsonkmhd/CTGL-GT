@@ -1,5 +1,3 @@
-package codePtit_java_core;
-
 import java.util.Scanner;
 
 public class kiem_tra_so_chinh_phuong {

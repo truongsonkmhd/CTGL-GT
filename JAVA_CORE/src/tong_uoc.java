@@ -1,5 +1,3 @@
-package codePtit_java_core;
-
 public class tong_uoc {
     public static long tongUoc(long n) {
         long sum = 0;

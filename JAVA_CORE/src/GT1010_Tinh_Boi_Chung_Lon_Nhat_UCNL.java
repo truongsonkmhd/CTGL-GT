@@ -1,5 +1,3 @@
-package codePtit_java_core;
-
 import java.util.Scanner;
 
 public class GT1010_Tinh_Boi_Chung_Lon_Nhat_UCNL {

@@ -1,5 +1,3 @@
-package codePtit_java_core;
-
 import java.util.Scanner;
 
 public class GT1009_Tinh_Tong_Giai_Thua {

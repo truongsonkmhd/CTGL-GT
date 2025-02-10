@@ -1,5 +1,3 @@
-package codePtit_java_core;
-
 import java.util.List;
 import java.util.Scanner;
 import java.util.LinkedList;

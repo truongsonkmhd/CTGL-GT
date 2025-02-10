@@ -1,5 +1,3 @@
-package codePtit_java_core;
-
 import java.util.Scanner;
 
 public class GT1011_Dem_Uoc_Chia_Het_Cho_2 {

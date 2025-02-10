@@ -1,4 +1,3 @@
-package codePtit_java_core;
 import java.util.Scanner;
 
 public class GT1013_Tong_Uoc_So_Nguyen {

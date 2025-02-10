@@ -1,6 +1,4 @@
-    package codePtit_java_core;
-
-    import java.util.Scanner;
+import java.util.Scanner;
 
     public class GT1008_Phan_Tich_Thua_So_Nguyen_To {
         public static Scanner ip = new Scanner(System.in);

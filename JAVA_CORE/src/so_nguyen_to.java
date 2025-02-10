@@ -1,5 +1,3 @@
-package codePtit_java_core;
-
 public class so_nguyen_to {
     private static boolean nguyenTo(int n){
         if (n < 2) return false;
