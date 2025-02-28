@@ -1,0 +1,83 @@
+-Lọc (filter()) sản phẩm có giá trên 500.
+-Ánh xạ (map()) danh sách sản phẩm thành danh sách tên.
+-Tìm kiếm (findFirst(), findAny()) sản phẩm có giá cao nhất.
+-Sắp xếp (sorted()) sản phẩm theo giá.
+-Bỏ qua (skip()) & Giới hạn (limit()) số lượng sản phẩm.
+-Ghép danh sách (stream.concat()).
+-Loại bỏ phần tử trùng (distinct()).
+-Sử dụng flatMap() để xử lý dữ liệu lồng nhau.
+-Kiểm tra điều kiện (allMatch(), anyMatch(), noneMatch()).
+-Tính toán (reduce()) tổng giá trị sản phẩm.
+-Nhóm sản phẩm (groupingBy()) theo giá trị.
+
+====>Trong Java, Optional<T> là một lớp thuộc gói java.util được giới thiệu từ Java 8 nhằm xử lý tình huống giá trị có thể null,
+giúp tránh lỗi NullPointerException (NPE).
+
+
+
+==========CÂU HỎI PHỎNG VẤN===========
+2. SỰ khác biệt giữa Collection và Stream là gì?
+-collection : Lưu trữ các phần tử dữ liệu và có thể thực hiện các thao tác
+trên toàn bộ hoặc một phần của tập dữ liệu đó.
+-stream : Không lưu trữ dữ liệu mà chỉ đại diện cho các phần tử tính toán
+và cùng cấp cách để xử lý chúng một cách tuần tự hoặc song song. Stream
+có thể là vô hạn và chỉ xử lý dữ liệu khi cần
+
+4. Sự khác nhau giữa FlatMap() và Map() là gì?
+- map(): Dùng để biến đổi từng phần tử trong Stream thành một đối tượng
+khác. Nó trả về một Stream chứa các đối tượng mới .
+- flatMap(): Dùng để biến đổi từng phần tử thành một Stream mới, sau đó gộp
+tất cả các Stream con thành một Stream
+
+12.Điều gì sẽ xay ra khi bạn gọi kết thúc nhiều lần trên một Stream() ?
+-Bạn sẽ gặp iiilegalStateExeption. Một Stream chỉ có thể có một thao tác kết
+thúc. Khi gọi thao táckết thúc lần thứ hai, exception này sẽ được ném ra.
+
+13.Bạn có thể giải thích peek() trong Stream không?
+-peek() là một thao tác trung gian chủ yếu được dùng cho mục đích gỡ lỗi .
+Nó cho phép bạn kiểm tra hoặc làm điều gì đó với từng phần tử trong Stream
+mà không cần thay đổi kết quả của Stream.
+
+14. Stream có xử lý các phần tử trùng lặp không ?
+- có sử dụng phương thức distinct()
+
+15. Bạn có thể sử dụng Stream với I/O (input/output) không?
+- có bạn có thể sử dụng Stream để xử lý các tệp tin hoặc luồng dữ liệu. Ví dụ, bạn có
+thể sử dụng Files.lines() để đọc từng dòng của một tệp và xử lý chúng với Stream API
+
+16. Lợi ích chính của Stream API?
+- StreamAPI giúp mã nguồn ngắn gọn , dễ đọc ,hỗ tro xử lý tuần tự song song, tận dụng
+sức mạnh của lập trình hàm, giảm thiểu lỗi do vòng lặp phức tạp và tăng hiệu năng khi
+xử lý tập dữ liệu lớn
+
+17. Stream APi có ảnh hưởng đến hiệu xuất không?
+- Stream Api được tối ưu hoá để hiệu suất tốt hơn so với các vòng lặp thông thường
+trong nhiều trường hợp, đặc biệt khi xử lý song song so với parallelStream(). Tuy nhiên ,
+với cá tập dữ liệu nhỏ , đôi khi việc sử dụng vòng lặp thông thường lại nhanh hơn
+do chi phí của việc tạo stream()
+
+18. Khi nào nên sử dụng parallelStream() thay vì stream ?
+-Bạn nên sử dụng parallelStream() khi làm việc tập dữ liệu lớn và khi có các tác
+vụ tính toán nănngj mà có thể chia nhỏ xử lý song song một cách độc lập . Tuy nhiên
+không phải mọi trường hợp đều phù hợp với việc xử lý song song do chi phí tạo các
+luồng (threads) va đồng bộ dữ liệu
+
+19. sự khác nhau giữu sum() và reduce() ?
+✅ Dùng sum() khi:
+-Bạn chỉ cần tính tổng.
+-Dữ liệu là kiểu số (int, long, double).
+
+✅ Dùng reduce() khi:
+-Bạn muốn thực hiện phép toán khác ngoài phép cộng (như nhân, tìm giá trị lớn nhất, nối chuỗi, v.v.).
+-Bạn làm việc với kiểu dữ liệu không phải số (ví dụ: String, List<T>).
+-Bạn muốn xử lý dữ liệu theo cách tùy chỉnh.
+
+ví dụ:
+- double totalPrice = products.stream()
+                 .map(Product::getPrice)
+                 .reduce(0.0, Double::sum);
+         System.out.println("\n🔹 Tổng giá trị sản phẩm: " + totalPrice);
+- int product = Arrays.asList(1, 2, 3, 4, 5)
+                .stream()
+                .reduce(1, (a, b) -> a * b);
+        System.out.println("Tích các số: " + product); // Kết quả: 120
