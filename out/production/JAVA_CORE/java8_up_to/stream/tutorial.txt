@@ -1,0 +1,26 @@
+-Lọc (filter()) sản phẩm có giá trên 500.
+-Ánh xạ (map()) danh sách sản phẩm thành danh sách tên.
+-Tìm kiếm (findFirst(), findAny()) sản phẩm có giá cao nhất.
+-Sắp xếp (sorted()) sản phẩm theo giá.
+-Bỏ qua (skip()) & Giới hạn (limit()) số lượng sản phẩm.
+-Ghép danh sách (stream.concat()).
+-Loại bỏ phần tử trùng (distinct()).
+-Sử dụng flatMap() để xử lý dữ liệu lồng nhau.
+-Kiểm tra điều kiện (allMatch(), anyMatch(), noneMatch()).
+-Tính toán (reduce()) tổng giá trị sản phẩm.
+-Nhóm sản phẩm (groupingBy()) theo giá trị.
+
+====>Trong Java, Optional<T> là một lớp thuộc gói java.util được giới thiệu từ Java 8 nhằm xử lý tình huống giá trị có thể null,
+giúp tránh lỗi NullPointerException (NPE).
+
+==========CÂU HỎI PHỎNG VẤN===========
+2. SỰ khác biệt giữa Collection và Stream là gì?
+-collection : Lưu trữ các phần tử dữ liệu và có thể thực hiện các thao tác
+trên toàn bộ hoặc một phần của tập dữ liệu đó.
+-stream : Không lưu trữ dữ liệu mà chỉ đại diện cho các phần tử tính toán
+và cùng cấp cách để xử lý chúng một cách tuần tự hoặc song song. Stream
+có thể là vô hạn và chỉ xử lý dữ liệu khi cần
+4. Sự khác nhau giữa FlatMap() và Map() là gì?
+- map(): Dùng để biến đổi từng phần tử trong Stream thành một đối tượng
+khác. Nó trả về một Stream chứa các đối tượng mới .
+- flatMap(
