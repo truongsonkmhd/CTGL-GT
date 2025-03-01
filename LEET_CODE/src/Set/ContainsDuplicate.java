@@ -11,6 +11,8 @@ Input: nums = [1,2,3,4]
 Output: false*/
 
 public class ContainsDuplicate {
+
+
     public static boolean containsDuplicate(int[] nums){
         Set<Integer> mySet = new HashSet<>();
         for(int n : nums){
