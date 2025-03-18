@@ -1,3 +1,18 @@
+====================== LÝ THUYẾT STREAM() ====================
+-Trong Java, Stream là một API mạnh mẽ được giới thiệu từ Java 8, giúp xử lý tập hợp dữ liệu (collections)
+một cách dễ dàng và hiệu quả bằng cách sử dụng lập trình hàm (functional programming).
+1. Khái niệm về Stream
+-Stream là một chuỗi các phần tử hỗ trợ các phép toán xử lý dữ liệu như lọc (filter), ánh xạ (map), sắp xếp (sorted),
+gom nhóm (grouping), giảm thiểu (reduce), v.v.
+-Không thay đổi dữ liệu gốc: Stream không làm thay đổi collection gốc mà tạo ra một Stream mới chứa dữ liệu đã xử lý.
+-Chỉ chạy khi cần thiết (lazy evaluation): Các phép toán trên Stream sẽ không được thực thi cho đến khi có một phép
+toán kết thúc (terminal operation).
+2. Các loại Stream
+-Java cung cấp hai loại Stream chính:
++Stream tuần tự (Sequential Stream): Xử lý các phần tử theo tuần tự.
++Stream song song (Parallel Stream): Xử lý các phần tử song song trên nhiều luồng (multi-threading).
+
+======= BÀI TAP THUC HANH =========
 -Lọc (filter()) sản phẩm có giá trên 500.
 -Ánh xạ (map()) danh sách sản phẩm thành danh sách tên.
 -Tìm kiếm (findFirst(), findAny()) sản phẩm có giá cao nhất.

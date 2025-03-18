@@ -1,8 +1,8 @@
-package trenlop;
+package trenlop.bai_1_regex;
 
 import java.util.Scanner;
 
-import static trenlop.QLSV.*;
+import static trenlop.bai_1_regex.QLSV.*;
 
 public class Main {
     public static void main(String[] args) {

@@ -1,10 +1,10 @@
-package trenlop;
+package trenlop.bai_1_regex;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-import static trenlop.KiemTraDieuKien.*;
+import static trenlop.bai_1_regex.KiemTraDieuKien.*;
 
 
 public class QLSV {

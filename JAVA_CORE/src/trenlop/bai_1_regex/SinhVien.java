@@ -1,4 +1,4 @@
-package trenlop;
+package trenlop.bai_1_regex;
 
 class SinhVien {
     String masv, hoTen, email, soDT, cmnd;

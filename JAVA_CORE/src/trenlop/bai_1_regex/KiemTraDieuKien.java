@@ -1,4 +1,4 @@
-package trenlop;
+package trenlop.bai_1_regex;
 
 public class KiemTraDieuKien {
     public static boolean validateEmail(String email) {
